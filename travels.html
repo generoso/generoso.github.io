@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Generoso Pagano Web Page</title>
+    <meta name="keywords"
+          content="generoso, pagano, sowftware, engineer, research, inria, travel, music, grenoble, lig, trace, open source, framesoc, ocelotl, eclipse, lttng"/>
+    <meta name="author" content="Generoso Pagano"/>
+    <link href="default.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png"/>
+    <!-- Map -->
+    <link href="./js/ammap/ammap.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+          rel='stylesheet' type='text/css'>
+    <!-- Analytics -->
+    <script src="./js/analytics.js"></script>
+</head>
+
+<body>
+
+<!-- start header -->
+<div id="topbar"></div>
+<div id="header">
+    <div id="logo">
+        <h1>
+            <a href="index.html">Generoso Pagano</a>
+        </h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="research.html">research</a></li>
+            <li class="current_page_item"><a href="#">travels</a></li>
+            <li><a href="photos.html">photos</a></li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+</div>
+<!-- end header -->
+
+<!-- start page -->
+<div id="page">
+    <!-- start content -->
+    <div id="content">
+        <!-- start main -->
+        <div id="main" class="post">
+
+            <h2 class="title">Countries I visited so far...</h2>
+
+            <script src="./js/ammap/ammap.js" type="text/javascript"></script>
+            <script src="./js/ammap/maps/js/worldHigh.js" type="text/javascript"></script>
+            <script src="./js/ammap/themes/light.js" type="text/javascript"></script>
+
+            <div id="mapdiv" style="height: 450px;"></div>
+            ​
+            <!-- Country codes in project/js/ammap/maps/js/worldHigh.js -->
+
+            <script type="text/javascript">
+					var map;
+
+					AmCharts.ready(function() {
+						map = new AmCharts.AmMap(AmCharts.themes.light);
+						map.pathToImages = "./js/ammap/images/";
+						map.dragMap = true;
+						map.backgroundColor = "#F4F4F4"; // sea color
+						map.backgroundAlpha = 0;
+						map.zoomControl.panControlEnabled = true;
+						map.zoomControl.zoomControlEnabled = true;
+
+						var dataProvider = {
+							mapVar : AmCharts.maps.worldHigh,
+							getAreasFromMap : true,
+							areas : [ {
+								id : 'AT',
+								showAsSelected : true
+							}, {
+								id : 'SK',
+								showAsSelected : true
+							}, {
+								id : 'BE',
+								showAsSelected : true
+							}, {
+								id : 'FR',
+								showAsSelected : true
+							}, {
+								id : 'DE',
+								showAsSelected : true
+							}, {
+								id : 'GR',
+								showAsSelected : true
+							}, {
+								id : 'IE',
+								showAsSelected : true
+							}, {
+								id : 'IT',
+								showAsSelected : true
+							}, {
+								id : 'NL',
+								showAsSelected : true
+							}, {
+								id : 'PL',
+								showAsSelected : true
+							}, {
+								id : 'RO',
+								showAsSelected : true
+							}, {
+								id : 'SM',
+								showAsSelected : true
+							}, {
+								id : 'ES',
+								showAsSelected : true
+							}, {
+								id : 'SE',
+								showAsSelected : true
+							}, {
+								id : 'PT',
+								showAsSelected : true
+							}, {
+								id : 'CH',
+								showAsSelected : true
+							}, {
+								id : 'GB',
+								showAsSelected : true
+							}, {
+								id : 'VA',
+								showAsSelected : true
+							}, {
+								id : 'CA',
+								showAsSelected : true
+							}, {
+								id : 'BR',
+								showAsSelected : true
+							}, {
+								id : 'JP',
+								showAsSelected : true
+							}, {
+								id : 'US',
+								showAsSelected : true
+							}, {
+								id : 'GP',
+								showAsSelected : true
+							} ]
+						};
+
+						map.dataProvider = dataProvider;
+
+						map.areasSettings = {
+							autoZoom : true,
+							color : "#CDCDCD", // not visited
+							colorSolid : "#5EB7DE",
+							selectedColor : "#5EB7DE", // visited
+							rollOverColor : "#88CAE7", // over not visited
+							rollOverOutlineColor : "#FFFFFF"
+						};
+
+						map.write("mapdiv");
+					});
+
+            </script>
+
+        </div>
+        <!-- end main -->
+    </div>
+    <!-- end content -->
+
+    <div id="cleardiv"></div>
+
+</div>
+<!-- end page -->
+<div id="footer">
+    <div id="legaldiv">
+        <p id="legal">&copy;2014 Generoso Pagano. All Rights Reserved.</p>
+    </div>
+</div>
+</body>
+</html>

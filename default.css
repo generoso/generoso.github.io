@@ -1,0 +1,270 @@
+/*
+Design by Generoso Pagano.
+Released for free under the Creative Commons Attribution License
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background: lightslategray;
+	text-align: justify;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #404040;
+	text-align: justify;
+	text-align: justify;
+	text-align: justify;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	color: #212121;
+}
+
+h1 {
+	letter-spacing: -1px;
+	font-size: 2.2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+small {
+	
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 0 0;
+	border: #D9D785 1px dashed;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 15px;
+	border: #D9D785 1px dashed;
+}
+
+/* Header */
+#topbar {
+	height: 10px;
+	background: #23233a;
+}
+
+#header {
+	width: 950px;
+	margin: 0 auto;
+	height: 155px;
+	letter-spacing: -1px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Logo */
+#logo {
+	float: left;
+	margin-top: 45px;
+	margin-left: 20px;
+}
+
+#logo h1 {
+	margin: 0;
+	font-size: 3.2em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#logo h1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Menu */
+#menu {
+	margin-left: 310px;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+	color: #000000;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	letter-spacing: normal;
+	display: block;
+	float: left;
+	padding: 70px 20px 0 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	color: #300044;
+}
+
+#menu .current_page_item a {
+	font-weight: bold;
+	color: #23233a;
+}
+
+/* Page */
+#page {
+	margin: 0 auto;
+	padding-top: 50px;
+	background: #F4F4F4;
+}
+
+#cleardiv {
+	clear: both;
+}
+
+#content {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#left-column {
+	clear: both;
+	float: left;
+	width: 620px;
+	padding: 0px 20px 50px 20px;
+	line-height: 25px;
+	font-size: 14px;
+	float: left;
+}
+
+#main {
+	padding: 0px 20px 50px 20px;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+#right-column {
+	float: right;
+	width: 250px;
+	line-height: 25px;
+	font-size: 12px;
+	margin-right: 15px;
+}
+
+.post {
+	
+}
+
+.post .title {
+	margin: 0;
+}
+
+.post .meta {
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	line-height: normal;
+	font-size: 13px;
+	color: #505050;
+}
+
+.post .meta a {
+	color: #000000;
+}
+
+.contacts {
+	margin-left: 20px;
+}
+
+.post .right {
+	float: right;
+}
+
+.post .left {
+	float: left;
+}
+
+#contact {
+	margin-top: -21px;
+}
+
+#map {
+	margin-top: 8px;
+	margin-bottom: 50px;
+	margin-right: 15px;
+}
+
+/* Footer */
+#footer {
+	clear: both;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 11px;
+	color: #CCCCCC;
+	height: 50px;
+	height: 50px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 13px 20px 15px 20px;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#legaldiv {
+	width: 950px;
+	margin: 0 auto;
+}
+
+#legal {
+	float: left;
+}
+
+#links {
+	float: right;
+}
+
+#mapdiv {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	padding-left: 60px;
+}
+
+.fotorama {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.fotorama__caption {
+	text-align: center;
+}
